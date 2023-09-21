@@ -1,10 +1,13 @@
 
 // import './globals.css'
+import styles from "../styles/layout.module.css";
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
+    <div lang="en">
+      <div className={styles.container}>{children}</div>
+    </div>
+  );
 }
+
+export default RootLayout;
