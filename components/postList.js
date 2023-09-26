@@ -1,15 +1,30 @@
 
 import PostCard from "./postCard";
-// import { getAllPosts } from "../utils/api";
+import {getSortedPostsData} from "../utils/api";
 
-const PostList = ({allPostsData}) => {
+// export async function getStaticProps() {
+//     const allPostsData = getPostData();
+//     return {
+//       props: {
+//         allPostsData,
+//       },
+//     };
+//   };
+
+const PostList = ({ allPostsData }) => {
   return (
     <section>
       <h2>Blog</h2>
       <ul>
-        {/* {posts.map((post) => (
-         <PostCard key={post.id} post={post} />
-        ))} */}
+          {/* {allPostsData.map(({id, date, title}) => (
+            <li className={utilStyles.listItem} key={id}>
+            <Link href={`/posts/${id}`}>{title}</Link>
+            <br />
+            <small className={utilStyles.lightText}>
+              <Date dateString={date} />
+            </small>
+          </li>
+          ))} */}
         </ul>
     </section>
   );

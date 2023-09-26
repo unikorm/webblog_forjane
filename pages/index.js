@@ -6,12 +6,20 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import PostList from '../components/postList';
 import styles from "../styles/layout.module.css";
+import {content} from "../utils/api";
 
-const Home = ({home}) => {
+export async function getStaticProps() {
+  const message = await content('first-post.md');
+  return {
+    message,
+  }
+}
+
+const Home = ({message}) => {
   return (
     <Layout>
       <Head>
-        <title>home</title>
+        <title>Domov</title>
       </Head>
       <section className={styles.aboutMeOnMain}>
         <Image
@@ -22,6 +30,7 @@ const Home = ({home}) => {
           alt="janula naša"
         />
         <h1>Janka LEDNICKÁ</h1>
+        <div dangerouslySetInnerHTML={{ __html: message }} />
         <p>Som obyčajne dedinské dievča ktoré ľúbi dobrodružstvo, adrenalín, pohyb. Tu si môžte prečítať niečo s mojej reality ktorá nieje vždy ružová no ako sa vraví “čo ťa nezabije to ťa posilní “.🐧</p>
       </section>
       <PostList />
