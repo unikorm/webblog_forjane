@@ -1,5 +1,6 @@
 
 import Link from 'next/link';
+import styles from "../styles/layout.module.css";
 
 const Header = () => {
   return (
