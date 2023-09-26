@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 import PostList from '../components/postList';
 import styles from "../styles/layout.module.css";
 
-const Home = () => {
+const Home = ({home}) => {
   return (
     <Layout>
       <Head>
@@ -25,7 +25,6 @@ const Home = () => {
         <p>Som obyčajne dedinské dievča ktoré ľúbi dobrodružstvo, adrenalín, pohyb. Tu si môžte prečítať niečo s mojej reality ktorá nieje vždy ružová no ako sa vraví “čo ťa nezabije to ťa posilní “.🐧</p>
       </section>
       <PostList />
-      <Link href="/about-me">na mna</Link>
     </Layout>
   );
 }

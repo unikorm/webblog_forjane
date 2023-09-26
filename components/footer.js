@@ -1,8 +1,11 @@
 
+import Link from 'next/link';
+import styles from "../styles/layout.module.css";
+
 const Footer = () => {
     return (
-      <footer>
-        <p>thank you for visiting</p>
+      <footer className={styles.footerContainer}>
+        <p>here will be contacts to social media</p>
       </footer>
     );
   }

@@ -13,3 +13,12 @@ h3 {
   font-size: 1.6rem;
   font-weight: bolder;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0 .3rem 0 .3rem;
+}

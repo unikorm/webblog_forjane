@@ -4,12 +4,12 @@ import styles from "../styles/layout.module.css";
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.headerContainer}>
       <nav>
-        <ul>
-            <li>Home</li>
-            <li>Me</li>
-            <li>Notin</li>
+        <ul className={styles.navStyles}>
+            <li><Link href="/">Domov</Link></li>
+            <li><Link href="./about-me">Ja</Link></li>
+            <li><Link href="/">Notin</Link></li>
         </ul>
       </nav>
     </header>
