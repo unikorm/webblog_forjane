@@ -1,12 +1,17 @@
 
 // import './globals.css'
+import React from "react";
 import styles from "../styles/layout.module.css";
+import Footer from "./footer";
+import Header from "./header";
 
 const RootLayout = ({ children }) => {
   return (
-    <div lang="en">
-      <div className={styles.container}>{children}</div>
-    </div>
+    <React.Fragment>
+      <Header />
+      <main className={styles.container}>{children}</main>
+      <Footer />
+    </React.Fragment>
   );
 }
 
