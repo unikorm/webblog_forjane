@@ -5,7 +5,7 @@ import path from 'path';
 
 // Function to read and return the content of a .md file
 const getMarkdownContent = (fileName) => {
-  const filePath = path.join(process.cwd(), 'markdown', fileName); // Construct the file path
+  const filePath = path.join(process.cwd(), 'posts', fileName)
   const fileContent = fs.readFileSync(filePath, 'utf-8'); // Read the file synchronously
   return fileContent;
 };

@@ -6,14 +6,16 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import PostList from '../components/postList';
 import styles from "../styles/layout.module.css";
-import {content} from "../utils/api";
+import {getMarkdownContent} from "../utils/api";
 
-export async function getStaticProps() {
-  const message = await content('first-post.md');
-  return {
-    message,
-  }
-}
+// export async function getStaticProps() {
+//   const message = getMarkdownContent();
+//   return {
+//     props: {
+//       message,
+//     },
+//   };
+// };
 
 const Home = ({message}) => {
   return (
