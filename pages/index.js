@@ -3,19 +3,9 @@ import Image from 'next/image';
 import Link from "next/link";
 import Head from "next/head";
 
-import Layout from "../components/layout";
-import PostList from '../components/postList';
+import Layout from "../components/layout.js";
+import PostList from "../components/postList.js";
 import styles from "../styles/layout.module.css";
-import {getMarkdownContent} from "../utils/api";
-
-// export async function getStaticProps() {
-//   const message = getMarkdownContent();
-//   return {
-//     props: {
-//       message,
-//     },
-//   };
-// };
 
 const Home = ({message}) => {
   return (
@@ -32,7 +22,6 @@ const Home = ({message}) => {
           alt="janula naša"
         />
         <h1>Janka LEDNICKÁ</h1>
-        <div dangerouslySetInnerHTML={{ __html: message }} />
         <p>Som obyčajne dedinské dievča ktoré ľúbi dobrodružstvo, adrenalín, pohyb. Tu si môžte prečítať niečo s mojej reality ktorá nieje vždy ružová no ako sa vraví “čo ťa nezabije to ťa posilní “.🐧</p>
       </section>
       <PostList />

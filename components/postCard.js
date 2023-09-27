@@ -1,5 +1,5 @@
 
-import Link from 'next/link';
+import Link from "next/link";
 
 const PostCard = ({ postData }) => {
   return (
@@ -10,7 +10,6 @@ const PostCard = ({ postData }) => {
       <small>
       <p>Published on {postData.date}</p>
       </small>
-      <p>{postData.content.substring(0, 100)}...</p>
     </li>
   );
 }

@@ -3,6 +3,7 @@
     "fs": false,
     "os": false,
     "path": false
+    
   },
   "name": "webblog_forjane",
   "version": "0.1.0",
@@ -14,7 +15,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "marked": "^9.0.3",
     "next": "13.5.2",
