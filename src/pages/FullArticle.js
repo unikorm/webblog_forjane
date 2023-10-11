@@ -4,7 +4,7 @@ import articles from "../data.json";
 import React from "react";
 
 const FullArticle = ({ articleId }) => {
-const article = articles.find((article) => article.id === articleId);
+const article = articles.articles.find((article) => article.id === articleId);
 
 if (!article) {
     return (

@@ -22,7 +22,7 @@ function App() {
         <FullArticle articleId={selectedArticleId} />
       ) : (
         <BlogList 
-          articles={articles}
+          articles={articles.articles}
           onArticleClick={(id) => setSelectedArticleId(id)} />
       )}
       <Footer />
