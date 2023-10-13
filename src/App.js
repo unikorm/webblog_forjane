@@ -18,7 +18,7 @@ function App() {
       <Header />
       <Head />
       <Routes>
-          <Route path="/" exact Component={BlogList} />
+          <Route path="/"  element={<BlogList />} />
           <Route path="/:id" element={<FullArticle />} />
         </Routes>
       <Footer />

@@ -7,8 +7,7 @@ import { useParams } from "react-router-dom";
 
 const FullArticle = () => {
     const { id } = useParams();
-    const articleId = articles.articles.find((post) => post.id === parseInt(id, 10));
-    const article = articles.articles.find((article) => article.id === articleId);
+    const article = articles.articles.find((article) => article.id === parseInt(id, 10));
 
 if (!article) {
     return (
