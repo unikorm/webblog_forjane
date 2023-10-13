@@ -1,5 +1,6 @@
 
 import articles from "../data.json";
+import styles from "../styles/fullArticle.module.css";
 
 import React from "react";
 
@@ -13,7 +14,7 @@ if (!article) {
 };
 
 return (
-    <article>
+    <article className={styles.fullArticleArticle}>
         <h3>{article.title}</h3>
         <p>{article.content}</p>
     </article>
