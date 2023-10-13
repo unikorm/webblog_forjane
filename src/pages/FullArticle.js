@@ -3,9 +3,11 @@ import articles from "../data.json";
 import styles from "../styles/fullArticle.module.css";
 
 import React from "react";
+import { useParams } from "react-router-dom";
 
-const FullArticle = ({ match }) => {
-    const articleId = parseInt(match.params.id, 10);
+const FullArticle = () => {
+    const { id } = useParams();
+    const articleId = articles.articles.find((post) => post.id === parseInt(id, 10));
     const article = articles.articles.find((article) => article.id === articleId);
 
 if (!article) {
