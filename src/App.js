@@ -5,29 +5,26 @@ import Head from './components/Head';
 import BlogList from './components/BlogList';
 import FullArticle from './pages/FullArticle';
 import Footer from './components/Footer';
-import articles from "./data.json";
 
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 
 function App() {
-  const [selectedArticleId, setSelectedArticleId] = useState(null);
-
 
   return (
+    <Router>
     <React.Fragment>
       <Header />
       <Head />
-      {selectedArticleId ? (
-        <FullArticle articleId={selectedArticleId} />
-      ) : (
-        <BlogList 
-          articles={articles.articles}
-          onArticleClick={(id) => setSelectedArticleId(id)} />
-      )}
+      <Routes>
+          <Route path="/" element={<BlogList />} />
+          <Route path="article/:id" element={<FullArticle />} />
+        </Routes>
       <Footer />
     </React.Fragment>
+    </Router>
   );
-}
+};
 
 export default App;

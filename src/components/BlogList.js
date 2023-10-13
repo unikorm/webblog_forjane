@@ -1,13 +1,21 @@
 
 import styles from "../styles/blogList.module.css";
-import React from "react";
+import articles from "../data.json";
 
-const BlogList = ({ articles, onArticleClick }) => {
+import React from "react";
+import { useNavigate } from 'react-router-dom'; 
+
+const BlogList = () => {
+    const navigate = useNavigate();
+
+    const onArticleClick = (articleId) => {
+        navigate(`/article/${articleId}`);
+    };
 
     return (
         <section className={styles.blogListSection}>
             <h4>MôJ BLOG</h4>
-            {articles.map((article) => (
+            {articles.articles.map((article) => (
                 <article
                     key={article.id}
                     onClick={() => onArticleClick(article.id)}

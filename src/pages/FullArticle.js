@@ -4,8 +4,9 @@ import styles from "../styles/fullArticle.module.css";
 
 import React from "react";
 
-const FullArticle = ({ articleId }) => {
-const article = articles.articles.find((article) => article.id === articleId);
+const FullArticle = ({ match }) => {
+    const articleId = parseInt(match.params.id, 10);
+    const article = articles.articles.find((article) => article.id === articleId);
 
 if (!article) {
     return (
