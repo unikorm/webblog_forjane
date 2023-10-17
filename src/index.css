@@ -9,3 +9,9 @@ body {
   width: 100%;
   font-family: 'Grandstander', cursive;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
