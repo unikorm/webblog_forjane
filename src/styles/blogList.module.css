@@ -2,9 +2,9 @@
 .blogListSection {
     display: flex;
     flex-direction: column;
-    
     padding: 0 2rem;
     max-width: 47.5rem;
+    cursor: pointer;
 }
 
 .blogListSection h4 {
