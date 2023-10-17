@@ -19,7 +19,7 @@ function App() {
       <Head />
       <Routes>
           <Route path="/"  element={<BlogList />} />
-          <Route path="/:id" element={<FullArticle />} />
+          <Route path="/:title" element={<FullArticle />} />
         </Routes>
       <Footer />
     </React.Fragment>

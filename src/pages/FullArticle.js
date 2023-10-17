@@ -1,13 +1,19 @@
 
-import articles from "../data.json";
+import data from "../data.json";
 import styles from "../styles/fullArticle.module.css";
 
 import React from "react";
 import { useParams } from "react-router-dom";
 
 const FullArticle = () => {
-    const { id } = useParams();
-    const article = articles.articles.find((article) => article.id === parseInt(id, 10));
+    const { title } = useParams();
+    const { articles } = data;
+    const titleFormath = (title) => {
+        const change = title.split("-").join(" ");
+        return change;
+    };
+
+    const article = articles.find((article) => article.title === titleFormath(title));
 
 if (!article) {
     return (
