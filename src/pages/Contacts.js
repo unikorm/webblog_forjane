@@ -1,17 +1,17 @@
 
-import styles from "../styles/aboutMe.module.css";
+import styles from "../styles/contacts.module.css";
 
 import React, { useEffect } from "react";
 
-const AboutMe = () => {
+const Contacts = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
     return (
-        <p>cus</p>
+        <p>kontakty</p>
     );
 };
 
-export default AboutMe;
+export default Contacts;

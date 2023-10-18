@@ -13,11 +13,11 @@ const Header = () => {
 
     return (
         <header>
-            <h1>JANA LEDNICKÁ</h1>
+            <h1 onClick={() => handleNavigation("/")} >JANA LEDNICKÁ</h1>
             <nav>
                 <ul>
                     <li onClick={() => handleNavigation("/about-me")} >About Me</li>
-                    <li>Contact</li>
+                    <li onClick={() => handleNavigation("/contacts")} >Contact</li>
                 </ul>
             </nav>
         </header>
