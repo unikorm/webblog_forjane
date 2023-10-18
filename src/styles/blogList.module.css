@@ -5,6 +5,7 @@
     padding: 0 2rem;
     max-width: 47.5rem;
     cursor: pointer;
+    margin: 0 0 2rem;
 }
 
 .blogListSection h4 {
@@ -25,6 +26,5 @@
 .blogListSection p {
     margin: 0 0 .5rem;
     font-weight: 300;
-
 }
 
