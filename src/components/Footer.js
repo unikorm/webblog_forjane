@@ -27,7 +27,6 @@ const Footer = () => {
             </section>
             <ul>
                 <li onClick={() => handleNavigation("/about-me")} >About Me</li>
-                <li onClick={() => handleNavigation("/contacts")} >Contact</li>
             </ul>
         </footer>
     );

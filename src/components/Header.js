@@ -17,7 +17,6 @@ const Header = () => {
             <nav>
                 <ul>
                     <li onClick={() => handleNavigation("/about-me")} >About Me</li>
-                    <li onClick={() => handleNavigation("/contacts")} >Contact</li>
                 </ul>
             </nav>
         </header>
