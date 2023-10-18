@@ -4,11 +4,11 @@ import Header from "../src/components/Header";
 import Head from './components/Head';
 import BlogList from './components/BlogList';
 import FullArticle from './pages/FullArticle';
+import AboutMe from './pages/AboutMe';
 import Footer from './components/Footer';
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
 
@@ -20,6 +20,7 @@ function App() {
       <Routes>
           <Route path="/"  element={<BlogList />} />
           <Route path="/:title" element={<FullArticle />} />
+          <Route path="/about-me" element={<AboutMe />} />
         </Routes>
       <Footer />
     </React.Fragment>

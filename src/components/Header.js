@@ -5,7 +5,7 @@ const Header = () => {
 
     return (
         <header>
-            <h1>JANA LEDNICKÁ</h1>   { /* this will be more robust, this is basic structure only */ }
+            <h1>JANA LEDNICKÁ</h1>
             <nav>
                 <ul>
                     <li>About Me</li>
