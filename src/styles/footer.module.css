@@ -24,6 +24,7 @@ footer h2 {
     letter-spacing: .15rem;
     line-height: 2.25rem;
     flex-grow: 1;
+    cursor: pointer;
 }
 
 footer section {
@@ -36,6 +37,7 @@ footer section {
 footer section img {
     width: fit-content;
     height: fit-content;
+    cursor: pointer;
 }
 
 footer ul {
@@ -50,4 +52,5 @@ footer ul {
 
 ul li {
     margin: 0 0 0 .6rem;
+    cursor: pointer;
 }

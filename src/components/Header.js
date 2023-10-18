@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <header>
-            <h1 onClick={() => handleNavigation("/")} >JANA LEDNICKÁ</h1>
+            <h1 onClick={() => handleNavigation("/")} >JANKA LEDNICKÁ</h1>
             <nav>
                 <ul>
                     <li onClick={() => handleNavigation("/about-me")} >About Me</li>

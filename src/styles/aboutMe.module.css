@@ -1,0 +1,44 @@
+
+.aboutMePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 9rem 0 2rem 0;
+    padding: 0 2rem;
+}
+
+.aboutMePage img {
+    max-width: 16rem;
+    border-radius: 50%;
+    border: none;
+    margin: 0 0 1rem;
+}
+
+.aboutMePage h2 {
+    font-family: 'Tilt Prism', cursive;
+    font-weight: 400;
+    font-size: 2.55rem;
+    letter-spacing: .15rem;
+    margin: .5rem 0;
+    text-align: center;
+}
+
+.aboutMePage article {
+    font-weight: 100;
+    font-size: 1.15rem;
+    max-width: 47.5rem;
+}
+
+.aboutMePage article h4 {
+    font-weight: 500;
+    font-size: 1.65rem;
+    letter-spacing: .01rem;
+    text-decoration: underline;
+    margin: 2rem 0 1rem;
+}
+
+.aboutMePage article p {
+    line-height: 1.35rem;
+    margin: 0;
+}
+

@@ -2,7 +2,6 @@
 import styles from "../styles/head.module.css";
 
 const Head = () => {
-
     const profilePhoto = "/images/profile.webp";
 
     return (
