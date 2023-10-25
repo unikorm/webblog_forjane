@@ -1,7 +1,6 @@
 
 import './App.css';
 import Header from "../src/components/Header";
-import Contacts from "../src/pages/Contacts";
 import Head from './components/Head';
 import BlogList from './components/BlogList';
 import FullArticle from './pages/FullArticle';

@@ -3,16 +3,16 @@ import styles from "../styles/blogList.module.css";
 import data from "../data.json";
 
 import React from "react";
-import { useNavigate } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 
 const BlogList = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const { articles } = data;
 
-    const onArticleClick = (articleTitle) => {
-        const url = articleTitle.split(" ").join("-");
-        navigate(`/${url}`);
-    };
+    // const onArticleClick = (articleTitle) => {
+    //     const url = articleTitle.split(" ").join("-");
+    //     navigate(`/${url}`);
+    // };
 
     return (
         <section className={styles.blogListSection}>
