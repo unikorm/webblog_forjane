@@ -13,7 +13,8 @@ const FullArticle = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const article = articles.find((article) => article.id === parseInt(id));
+    // const article = articles.find((article) => article.id === parseInt(id));
+    const article = articles[id];
 
     if (!article) {
         return (

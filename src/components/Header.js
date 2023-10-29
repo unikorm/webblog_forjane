@@ -2,21 +2,16 @@
 import styles from "../styles/header.module.css";
 
 import React from "react";
-import { useNavigate } from 'react-router-dom'; 
+import { Link } from 'react-router-dom'; 
 
 const Header = () => {
-    const navigate = useNavigate();
-
-    const handleNavigation = (path) => {
-        navigate(path);
-    };
 
     return (
         <header>
-            <h1 onClick={() => handleNavigation("/")} >JANKA LEDNICKÁ</h1>
+            <h1><Link to="/" >JANKA LEDNICKÁ</Link></h1>
             <nav>
                 <ul>
-                    <li onClick={() => handleNavigation("/about-me")} >About Me</li>
+                    <li><Link to="/about-me" >About Me</Link></li>
                 </ul>
             </nav>
         </header>
