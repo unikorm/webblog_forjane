@@ -6,6 +6,8 @@
     max-width: 47.5rem;
     cursor: pointer;
     margin: 0 0 2rem;
+    text-decoration: none;
+    color: black;
 }
 
 .blogListSection h4 {

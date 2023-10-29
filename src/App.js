@@ -21,7 +21,7 @@ function App() {
       {!hideHead && <Head />}
       <Routes>
           <Route path="/"  element={<BlogList />} />
-          <Route path="/:title" element={<FullArticle />} />
+          <Route path="/:id" element={<FullArticle />} />
           <Route path="/about-me" element={<AboutMe />} />
         </Routes>
       <Footer />
