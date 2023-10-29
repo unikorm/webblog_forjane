@@ -12,7 +12,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
   const location = useLocation();
-  const routesWithoutHead = ["/about-me", "/contacts"];
+  const routesWithoutHead = ["/about-me",];
   const hideHead = routesWithoutHead.includes(location.pathname);
 
   return (

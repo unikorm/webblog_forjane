@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 
 const BlogList = () => {
 
-    const convertArticlesToArray = (articlesObject) => {
-    return Object.keys(articlesObject).map((id) => articlesObject[id]);
+    const convertArticlesToArray = (object) => {
+    return Object.keys(object).map((id) => object[id]);
     };
     
     const { articles } = data;
