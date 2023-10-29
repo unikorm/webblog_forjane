@@ -8,10 +8,6 @@ import { useParams } from "react-router-dom";
 const FullArticle = () => {
     const { id } = useParams();
     const { articles } = data;
-    // const titleFormath = (title) => {
-    //     const change = title.split("-").join(" ");
-    //     return change;
-    // };
 
     useEffect(() => {
         window.scrollTo(0, 0);
