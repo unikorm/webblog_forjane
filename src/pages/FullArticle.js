@@ -6,18 +6,18 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const FullArticle = () => {
-    const { title } = useParams();
+    const { id } = useParams();
     const { articles } = data;
-    const titleFormath = (title) => {
-        const change = title.split("-").join(" ");
-        return change;
-    };
+    // const titleFormath = (title) => {
+    //     const change = title.split("-").join(" ");
+    //     return change;
+    // };
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    const article = articles.find((article) => article.title === titleFormath(title));
+    const article = articles.find((article) => article.id === parseInt(id));
 
     if (!article) {
         return (
